@@ -1,0 +1,18 @@
+https://blog.csdn.net/wxz980927155/article/details/82193220
+
+https://blog.csdn.net/baidu_37107022/article/details/78196766
+https://blog.csdn.net/fuck487/article/details/78895451
+https://blog.csdn.net/u013063153/article/details/62039368
+
+1.eclipse导出jar
+2.执行导出的文件
+nohup java -jar Test4.jar 333 444
+		System.out.println("11111:"+args[0]);
+		System.out.println("22222:"+args[1]);
+java -jar Test4.jar 
+
+
+
+https://www.cnblogs.com/pianai-shu/p/8108568.html
+
+java -jar zhht8700.jar 京A12345
