@@ -17,3 +17,8 @@ https://www.cnblogs.com/pianai-shu/p/8108568.html
 
 java -jar zhht8700.jar 京A12345
 
+git add ./
+git commit -m ""
+git push origin master
+git pull 
+
