@@ -17,7 +17,7 @@ import com.zhht.hikvision.zhht_hikvsion.util.JavaHttpUtil;
 
 public class HikvsionControl {
 	
-	private static final String HOST = "http://47.94.46.162:80/webapi/service/"; //此处替换成平台SDK所在服务器IP与端口
+	private static final String HOST = "http://47.94.46.162:83/webapi/service/"; //此处替换成平台SDK所在服务器IP与端口
 	public static final String APPKEY = "b5568a87";//此处替换成申请的appkey
 	public static final String SECRET = "0a545055c2574e0695558e2e41f813e4";//此处替换成申请的secret
 	
