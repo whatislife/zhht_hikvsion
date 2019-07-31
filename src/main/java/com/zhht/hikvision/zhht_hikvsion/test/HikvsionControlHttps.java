@@ -9,9 +9,9 @@ import com.zhht.hikvision.zhht_hikvsion.ssl.HttpUtil;
 
 public class HikvsionControlHttps {
 	
-	private static final String HOST = "https://47.94.46.162:83/webapi/service/"; //此处替换成平台SDK所在服务器IP与端口
-	public static final String APPKEY = "b5568a87";//此处替换成申请的appkey
-	public static final String SECRET = "0a545055c2574e0695558e2e41f813e4";//此处替换成申请的secret
+	private static final String HOST = "https://10.26.235.240:81/webapi/service/"; //此处替换成平台SDK所在服务器IP与端口
+	public static final String APPKEY = "37d3136b";//此处替换成申请的appkey
+	public static final String SECRET = "db13b69af7d54ff787748c50812e97dd";//此处替换成申请的secret
 	
 	public static void main(String[] args) {
 		for(String arg:args){

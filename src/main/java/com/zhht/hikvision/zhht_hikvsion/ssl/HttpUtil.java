@@ -115,12 +115,14 @@ public class HttpUtil {
 			}
 		} catch (KeyManagementException|NoSuchAlgorithmException|IOException e) {
 //			log.error("httputil error:",e);
+			System.out.println("httputil error:"+e);
 		}finally{
 			if(out!=null){
 				try {
 					out.close();
 				} catch (IOException e) {
 //					log.error("httputil error:",e);
+					System.out.println("httputil error:"+e);
 				}
 			}
 			if(in!=null){
@@ -128,6 +130,7 @@ public class HttpUtil {
 					in.close();
 				} catch (IOException e) {
 //					log.error("httputil error:",e);
+					System.out.println("httputil error:"+e);
 				}
 			}
 		}
@@ -156,7 +159,8 @@ public class HttpUtil {
 			// 加入数据
 			httpsConn.setRequestMethod("GET");
 //			httpsConn.setDoOutput(true);
-
+			httpsConn.setConnectTimeout(3000);
+			httpsConn.setReadTimeout(3000);
 			// 获取输入流
 			in = new BufferedReader(new InputStreamReader(
 					httpsConn.getInputStream(),"UTF-8"));
@@ -174,6 +178,7 @@ public class HttpUtil {
 			}
 		} catch (Exception e) {
 //			log.error("httputil error:",e);
+			System.out.println("httputil error:"+e);
 		}finally{
 			try {
 				if(in!=null)
@@ -182,6 +187,7 @@ public class HttpUtil {
 				}
 			} catch (IOException e) {
 //				log.error("httputil error:",e);
+				System.out.println("httputil error:"+e);
 			}
 		}
 
@@ -222,12 +228,14 @@ public class HttpUtil {
 			}
 		} catch (Exception e) {
 //			log.error("httputil error:",e);
+			System.out.println("httputil error:"+e);
 		} finally{
 			if(in!=null){
 				try {
 					in.close();
 				} catch (IOException e) {
 //					log.error("httputil error:",e);
+					System.out.println("httputil error:"+e);
 				}
 			}
 		}
@@ -254,6 +262,7 @@ public class HttpUtil {
             }
         } catch (MalformedURLException e) {
 //			log.error("httputil error:",e);
+        	System.out.println("httputil error:"+e);
         }
  
         return inputStream;
@@ -310,12 +319,14 @@ public class HttpUtil {
 			}
 		} catch (IOException e) {
 //			log.error("httputil error:",e);
+			System.out.println("httputil error:"+e);
 		}finally{
 			if(in!=null){
 				try {
 					in.close();
 				} catch (IOException e) {
 //					log.error("httputil error:",e);
+					System.out.println("httputil error:"+e);
 				}
 			}
 			if(out!=null){
@@ -323,6 +334,7 @@ public class HttpUtil {
 					out.close();
 				} catch (IOException e) {
 //					log.error("httputil error:",e);
+					System.out.println("httputil error:"+e);
 				}
 			}
 		}
@@ -331,6 +343,7 @@ public class HttpUtil {
 			result=result==null?"":new String(result.getBytes("UTF-8"),"UTF-8");  
 		} catch (UnsupportedEncodingException e) {
 //			log.error("httputil error:",e);
+			System.out.println("httputil error:"+e);
 		}
 		return result;
 	}	
