@@ -77,6 +77,7 @@ public class JavaHttpUtil {
 		}
 		String token = TokenGenerateUtil.buildToken(preUrl + interfaceName + "?" + sb.toString(), null, secret);
 		String urlStr = preUrl + interfaceName + "?" + sb.toString() + "&token=" + token;
+		System.out.println("请求地址："+urlStr);
 		StringBuffer result = new StringBuffer();
 		InputStream is = null;
 		InputStreamReader inputStreamReader = null;

@@ -55,7 +55,7 @@ public class HttpUtil {
 		}
 		String token = TokenGenerateUtil.buildToken(preUrl + interfaceName + "?" + sb.toString(), null, secret);
 		String urlStr = preUrl + interfaceName + "?" + sb.toString() + "&token=" + token;
-
+		System.out.println("请求地址："+urlStr);
 		String response = "";
 		if(preUrl.indexOf("https")!=-1){//未找到
 			response = sendHttpsGET(urlStr);
