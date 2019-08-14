@@ -25,6 +25,8 @@ import com.zhht.hikvision.zhht_hikvsion.util.TokenGenerateUtil;
  */
 public class HikvsionControlC {
 	
+	
+	
 //	private static final String HOST = "http://10.26.235.240:81/webapi/service/"; //此处替换成平台SDK所在服务器IP与端口
 //	public static final String APPKEY = "37d3136b";//此处替换成申请的appkey
 //	public static final String SECRET = "db13b69af7d54ff787748c50812e97dd";//此处替换成申请的secret
