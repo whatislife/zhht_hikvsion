@@ -14,7 +14,14 @@ import java.util.Map;
 
 import com.alibaba.fastjson.JSON;
 import com.zhht.hikvision.zhht_hikvsion.util.JavaHttpUtil;
-
+/**
+ * 
+* @ClassName: HikvsionControl  
+* <p>Description: 自己调用接口</p>
+* @author 宋建 songjian@zhihuihutong.com 
+* @date 2019年8月14日 下午3:52:06  
+*
+ */
 public class HikvsionControl {
 	
 //	private static final String HOST = "http://10.26.235.240:81/webapi/service/"; //此处替换成平台SDK所在服务器IP与端口
